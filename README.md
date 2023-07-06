@@ -32,5 +32,6 @@ In this challenge, I will enhance my JavaScript skills and knowledge,And I will 
 ## ⭐️Folder Structure
 
  1. [Day1](https://github.com/TarteelGH/Mastering-Java-Script-In-20-Days/blob/main/Day1.md)
+ 2. [Day2](https://github.com/TarteelGH/Mastering-Java-Script-In-20-Days/blob/main/Day2.md)
 
 
