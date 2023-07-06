@@ -35,6 +35,6 @@ In this challenge, I will enhance my JavaScript skills and knowledge,And I will 
  2. [Day2](https://github.com/TarteelGH/Mastering-Java-Script-In-20-Days/blob/main/Day2.md)
  3. [Day3](https://github.com/TarteelGH/Mastering-Java-Script-In-20-Days/blob/main/Day3.md)
  4. [Day4](https://github.com/TarteelGH/Mastering-Java-Script-In-20-Days/blob/main/Day4.md)
- 5. [Day5](
+ 5. [Day5](https://github.com/TarteelGH/Mastering-Java-Script-In-20-Days/blob/main/Day5.md)
 
 
