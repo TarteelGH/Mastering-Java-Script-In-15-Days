@@ -7,8 +7,8 @@
   -  Quiz Project .
   -  Quiz Project Functions .
   
-3.  Summarize what I learned .
-4. Solve some problems from FreeCodeCamp .
+2.  Summarize what I learned .
+3. Solve some problems from FreeCodeCamp .
   
 
 ## Summary of topics 📝
