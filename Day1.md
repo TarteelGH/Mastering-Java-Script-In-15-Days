@@ -7,7 +7,8 @@
   - Dom .
   - Value & Data Types .
   - Operators .
-2. Solve some problems from FreeCodeCamp .
+2.  Summarize what I learned .
+3. Solve some problems from FreeCodeCamp .
   
 
 ## Summary of topics 📝
@@ -79,6 +80,7 @@ Let's dig into this document!
   - ( <= )less than or equal to
     
 ## Examples 🔍
+1.
 ```javascript
 <body>
     <header>
@@ -108,12 +110,28 @@ document.getElementById('p2-name').textContent = "Majd"  = will change the secon
 document.getElementById('p2-name').append(" & Sara")     = will add sara to the sacond player
 document.querySelector("header h2").append(" and love")  = will append "and love" to the second header  
 ```
+__________________________________________________________
+2.
+```
+"super".length                 OutPut = 5
+"ALOHA"[2]                     OutPut = O
+"ALOHA".indexOf("L")           OutPut = 1
+"ALOHA".indexOf("Q")           OutPut = -1
+"ALOHA".includes("HA")         OutPut = 3
+"ALOHA".startsWith("AL")       OutPut = True
+"ALOHA" + "!"                  OutPut = ALOHA!
+"ALOHA".toLowerCase()          OutPut = aloha
+typeof document.title          OutPut = String
+typeof "some string".length    OutPut = Number
+typeof null                    OutPut = Object
+```
+
 
 ## Challenges 💪🏽
 
 1.[Compound Assignment With Augmented Multiplication](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication)
 
-**Solution**
+***Solution***
 ```let a = 5;
 let b = 12;
 let c = 4.6;
@@ -126,7 +144,7 @@ c *= 10;
 
 2.[Concatenating Strings with the Plus Equals Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/concatenating-strings-with-the-plus-equals-operator)
 
-**Solution**
+***Solution***
 
 ```let myStr;
 myStr = "This is the first sentence.";
@@ -135,7 +153,7 @@ myStr += " This is the second sentence.";
 
 3.[Use Bracket Notation to Find the Nth-to-Last Character in a String](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-bracket-notation-to-find-the-nth-to-last-character-in-a-string)
 
-**Solution**
+***Solution***
 
 ```// Setup
 const lastName = "Lovelace";
