@@ -27,21 +27,28 @@
 
 ## Challenges 💪🏽
 
-1.
+1.[Use Multiple Conditional (Ternary) Operators](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-multiple-conditional-ternary-operators)
 
 **Solution**
 
 ```
 ```
 
-2.
+2.[Golf Code](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/golf-code)
 
 **Solution**
 
 ```
 ```
 
-3.
+3.[Use the map Method to Extract Data from an Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-map-method-to-extract-data-from-an-array)
+
+**Solution**
+
+```
+```
+
+4.[Use the filter Method to Extract Data from an Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-filter-method-to-extract-data-from-an-array)
 
 **Solution**
 
