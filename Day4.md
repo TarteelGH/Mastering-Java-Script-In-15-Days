@@ -9,7 +9,7 @@
  - Map & Filter .
  - Doggos Quiz Game .
 
-2.Summarize what i learned .
+2. Summarize what i learned .   
 3. Solve some problems from FreeCodeCamp .
   
 
