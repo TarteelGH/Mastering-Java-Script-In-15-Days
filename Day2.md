@@ -3,10 +3,11 @@
 ## Things to do ✔️
 
 1. Watch This Topics from -JavaScript: From First Steps to Professional- course :
-  -  
-  - 
-  - 
-2. Solve some problems from FreeCodeCamp .
+   -
+   -
+   -
+2.  Summarize what I learned .
+3. Solve some problems from FreeCodeCamp .
   
 
 ## Summary of topics 📝
@@ -23,21 +24,21 @@
 
 1.
 
-**Solution**
+***Solution***
 
 ```
 ```
 
 2.
 
-**Solution**
+***olution***
 
 ```
 ```
 
 3.
 
-**Solution**
+***Solution***
 
 ```
 ```
