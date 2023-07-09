@@ -15,7 +15,7 @@
 ## Summary of topics 📝
 
 ### 1. Expressions :
-
+*let : declaration declares a block-scoped local variable.optionally initializing it to a value
 ### 2. Arrays :
 
 ### 3. Objects :
