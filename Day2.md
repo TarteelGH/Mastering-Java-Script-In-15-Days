@@ -84,7 +84,7 @@ We'll see more kinds of statements later in the course
   * **.pop()** : The pop() method removes the last element from an array and returns that element. This method changes the length of the array. ` const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato']; plants.pop(); ` output:  ` Array ["broccoli", "cauliflower", "cabbage", "kale"]  `
 
 
-  * **.push()** : The push() method adds the specified elements to the end of an array and returns the new length of the array. ` let numbers1 = [1, 2, 3]; let result1 = numbers1.push(4); ` output : ` [1, 2, 3, 4] `
+  * **.push()** : The push() method adds the specified elements to the end of an array and returns the new length of the array. ` let  numbers1 = [1, 2, 3]; let result1 = numbers1.push(4); ` output : ` [1, 2, 3, 4] `
 
   > ***Do these do the same thing?***
    ``` let abcArray = ["a", "b", "c"];
@@ -104,7 +104,8 @@ We'll see more kinds of statements later in the course
    * "Immutable" data always stays the same (e.g. strings & other primitives)
   
    > ***Do these do the same thing?***
-   ``` let numbers1 = [1, 2, 3];
+   ```
+       let numbers1 = [1, 2, 3];
        let result1 = numbers1.push(4);
        numbers1;
    ```
