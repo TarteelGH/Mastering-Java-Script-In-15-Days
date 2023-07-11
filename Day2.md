@@ -233,7 +233,7 @@ const spiceGirls = {
  ` console.error("oh no, it broke!"); ` ⛔
  ` console.clear(); ` 🗑️
   * Math :
-` let randomNumber = Math.random(); `
+` let randomNumber = Math.random(); //between 0 & 1 `
 ` const pi = Math.PI; `
 ` const five = Math.abs(-5); `
   * strings?
