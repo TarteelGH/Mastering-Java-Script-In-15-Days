@@ -118,7 +118,7 @@ We'll see more kinds of statements later in the course
    > Some actions "mutate" an array (e.g. oldArray.push(newValue)) ...aka change the array in-place
    > Other actions do not mutate the original array, but instead create a new copy (e.g. oldArray.concat(otherArray)) .
 
-     > ***What will Happen?
+     > ***What will Happen?***
    ``` const operands = [4, 6];
        const sum = operands[0] + operands[1];
        operands[0] = 5;
@@ -126,9 +126,102 @@ We'll see more kinds of statements later in the course
        const newSum = operands[0] + operands[1];
        console.log(sum , newSum ,operands);
    ```
-   > OutPut ` 10 11 [ 5, 6 ] `    
+   > OutPut ` 10 11 [ 5, 6 ] `
+
+   > ***Other tings***
+   > "lonely" == ["lonely"] ✔️
+   > "lonely" === ["lonely"] ✖️
+   
 ### 3. Objects :
 
+- #### Object :  The Object type represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor or the object initializer / literal syntax.
+
+```
+const js = {
+    name: "JavaScript",
+    abbreviation: "JS",
+    isAwesome: true,
+    officialSpec: "ECMAScript",
+    birthYear: 1995,
+    creator: "Brendan Eich"
+};
+```
+Objects collect multiple values together to describe more complex data Similar to how we can point at different values using variables in our code, objects let us point at related values using properties in the object.
+
+* Getting property values : ` js.name `  ` js.isAwesome `
+* Using property values : ` js.name.startsWith("Java") `  ` let age = 2022 - js.birthYear; `
+* Setting property values :
+```
+const indecisive = {
+    lunch: "sandwich"
+};
+
+indecisive.lunch = "tacos";
+indecisive.snack = "chips";
+
+```
+>(,)=new property.
+>(.)=value to collect | create new proprty.
+
+
+- #### metods :
+
+  * Properties can point to functions too We call function-properties "methods" on objects
+```
+const dog = {
+    name: "Ein",
+    breed: "Corgi",
+    speak: function () {
+        console.log("woof woof");
+    }
+}
+
+dog.speak();
+```
+* this in a method lets us reference other properties on the object
+```
+anjana.speak = function () {
+    console.log("Hi my name is", this.name);
+}
+
+anjana.speak();
+```
+* Nested objects :
+```
+const menu = {
+    lunch: {
+        appetizer: "salad",
+        main: "spaghetti",
+        dessert: "tiramisu"
+    },
+    dinner: {
+        appetizer: "samosa",
+        main: "saag paneer",
+        dessert: "gulab jamun"
+    }
+};
+const tiramisu = menu.lunch.dessert;
+```
+* Objects in Arrays & Objects :
+```
+const spices = [
+    {name: "Emma", nickname: "Baby"},
+    {name: "Geri", nickname: "Ginger"},
+    {name: "Mel B", nickname: "Scary"},
+    {name: "Mel C", nickname: "Sporty"},
+    {name: "Victoria", nickname: "Posh"}
+];
+
+const spiceGirls = {
+    albums: ["Spice", "Spiceworld", "Forever"],
+    motto: "Girl Power",
+    members: spices
+};
+```
+
+
+
+ 
 ## Examples 🔍
 
 ## Challenges 💪🏽
