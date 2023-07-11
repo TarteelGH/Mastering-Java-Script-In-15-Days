@@ -151,14 +151,8 @@ trap();
 console.log(feeling); /// undefined ,  boxedIn
 ```
 
-
-
-
-
-
-
-
 ## Examples 🔍
+> I put so many examples at every point ...
 
 ## Challenges 💪🏽
 
