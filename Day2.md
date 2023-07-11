@@ -310,6 +310,15 @@ lookUpProfile("Akira", "likes");
 ***Solution***
 
 ```
+function forecast(arr) {
+  // Only change code below this line
+let forecast = ['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms'] //The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified. 
+ arr = forecast.slice(2,4);
+  return arr;
+}
+
+// Only change code above this line
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
 ```
 
 3.[Combine Arrays with the Spread Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/combine-arrays-with-the-spread-operator)
