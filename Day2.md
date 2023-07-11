@@ -148,9 +148,9 @@ const js = {
 ```
 Objects collect multiple values together to describe more complex data Similar to how we can point at different values using variables in our code, objects let us point at related values using properties in the object.
 
-* Getting property values : ` js.name `  ` js.isAwesome `
-* Using property values : ` js.name.startsWith("Java") `  ` let age = 2022 - js.birthYear; `
-* Setting property values :
+    * Getting property values : ` js.name `  ` js.isAwesome `
+    * Using property values : ` js.name.startsWith("Java") `  ` let age = 2022 - js.birthYear; `
+    * Setting property values :
 ```
 const indecisive = {
     lunch: "sandwich"
@@ -166,7 +166,7 @@ indecisive.snack = "chips";
 
 - #### methods :
 
-  * Properties can point to functions too We call function-properties "methods" on objects
+    * Properties can point to functions too We call function-properties "methods" on objects
 ```
 const dog = {
     name: "Ein",
@@ -178,7 +178,7 @@ const dog = {
 
 dog.speak();
 ```
-* this in a method lets us reference other properties on the object
+    * this in a method lets us reference other properties on the object
 ```
 anjana.speak = function () {
     console.log("Hi my name is", this.name);
@@ -186,7 +186,7 @@ anjana.speak = function () {
 
 anjana.speak();
 ```
-* Nested objects :
+- #### Nested objects :
 ```
 const menu = {
     lunch: {
@@ -202,7 +202,7 @@ const menu = {
 };
 const tiramisu = menu.lunch.dessert;
 ```
-* Objects in Arrays & Objects :
+- #### Objects in Arrays & Objects :
 ```
 const spices = [
     {name: "Emma", nickname: "Baby"},
@@ -223,21 +223,33 @@ const spiceGirls = {
 
   * document :
  ` document.title = "Tic Tac Toe"; document.querySelector("h2").append(" and love"); `
-  * console : 
+  *  console : 
  ` console.log("hello coder!"); `
  ` console.log(document.querySelector("h1").textContent); `
  ` console.warn("something seems iffy"); `⚠️
  ` console.error("oh no, it broke!"); ` ⛔
  ` console.clear(); ` 🗑️
- * Math :
+  * Math :
 ` let randomNumber = Math.random(); `
 ` const pi = Math.PI; `
 ` const five = Math.abs(-5); `
-
-
+  * strings?
+Strings are primitive values (not objects) but JS automatically wraps them in String objects and it,s imutable 
+```
+const hello = "hello";
+console.log(hello.length);
+const yello = hello.toUpperCase();
+```
+>    + var-> functional scope, redecleration✅, reassignment✅, hoisting✅.
+      
+>    + let-> block scope, redecleration❎, reassignment✅, hoisting❎.
+     
+>    + const-> block scope, redecleration❎, reassignment❎, hoisting❎.
 
  
 ## Examples 🔍
+
+> I put so many examples at every point ... 
 
 ## Challenges 💪🏽
 
