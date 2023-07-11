@@ -96,7 +96,7 @@ We'll see more kinds of statements later in the course
      abcString[1] = "d";
      abcString;
    ```
-   > So first one **abcArray** will be ["a", "d", "c"]  and the second one will be the same **"abc"** 
+   > So first one **abcArray** will be ["a", "d", "c"]  and the second one **abcString**  will be the same "abc" .
 
  - #### mutable vs. immutable :
    
@@ -178,7 +178,9 @@ const dog = {
 
 dog.speak();
 ```
+
     * this in a method lets us reference other properties on the object
+    
 ```
 anjana.speak = function () {
     console.log("Hi my name is", this.name);
