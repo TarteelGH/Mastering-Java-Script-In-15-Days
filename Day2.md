@@ -326,6 +326,17 @@ console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']
 ***Solution***
 
 ```
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning', ... fragment ,'is',  'fun']; // Change this line
+  return sentence;
+}
+
+console.log(spreadOut());
+
+//The spread (...) syntax allows an iterable, such as an array or string, to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected. In an object literal, the spread syntax enumerates the properties of an object and adds the key-value pairs to the object being created.
+
+
 ```
 
 # DONE 😇
