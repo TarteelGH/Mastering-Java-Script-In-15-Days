@@ -103,7 +103,7 @@ We'll see more kinds of statements later in the course
    * "Mutable" data can be edited (e.g. Arrays)
    * "Immutable" data always stays the same (e.g. strings & other primitives)
   
-       > ***Do these do the same thing?***
+   > ***Do these do the same thing?***
    ``` let numbers1 = [1, 2, 3];
        let result1 = numbers1.push(4);
        numbers1;
@@ -164,7 +164,7 @@ indecisive.snack = "chips";
 >(.)=value to collect | create new proprty.
 
 
-- #### metods :
+- #### methods :
 
   * Properties can point to functions too We call function-properties "methods" on objects
 ```
@@ -218,6 +218,21 @@ const spiceGirls = {
     members: spices
 };
 ```
+
+- #### Built in objects :
+
+  * document :
+ ` document.title = "Tic Tac Toe"; document.querySelector("h2").append(" and love"); `
+  * console : 
+ ` console.log("hello coder!"); `
+ ` console.log(document.querySelector("h1").textContent); `
+ ` console.warn("something seems iffy"); `⚠️
+ ` console.error("oh no, it broke!"); ` ⛔
+ ` console.clear(); ` 🗑️
+ * Math :
+` let randomNumber = Math.random(); `
+` const pi = Math.PI; `
+` const five = Math.abs(-5); `
 
 
 
