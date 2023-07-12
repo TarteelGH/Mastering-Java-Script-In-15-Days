@@ -163,21 +163,26 @@ if (you.happy && you.knowIt) {
 * Logical operators let us make two boolean values become one
 * Logical "and" (&&) requires both values to be truthy
 
-  |   A    |   B    | A && B |
+  **A && B**
+
+  |   A    |   B    | A AND B| 
   | ------ | ------ | ------ |
   |  true  |  true  |  true  |
   |  true  |  false | false  |
   |  false |  true  | false  |
   |  false |  false | false  |
 
-* Logical "or" (||) requires only one value to be truthy
+* Logical "or" (||) requires only one value to be 
 
-  |   A    |   B    | A || B |
+  **A || B**
+
+  |   A    |   B    | A OR B |  
   | ------ | ------ | ------ |
   |  true  |  true  |  true  |
   |  true  |  false |  true  |
   |  false |  true  |  true  |
   |  false |  false | false  |
+
 
 #### Conditional ternary operator :
 
@@ -201,7 +206,7 @@ if (forecast === "sunny") {
 * The map & filter methods also let us process all the items in an array .
 * **map** calls a function on each item in an array to create a new array
 ```
-const spices = [
+    const spices = [
     {name: "Emma", nickname: "Baby"},
     {name: "Geri", nickname: "Ginger"},
     {name: "Mel B", nickname: "Scary"},
@@ -209,8 +214,10 @@ const spices = [
     {name: "Victoria", nickname: "Posh"}
 ];
 
-const nicknames = spices.map(s => s.nickname + " Spice");
+const nicknames = spices.map(s => s.nickname + " Spice
+
 ```
+
 * String templates are useful too! Make them with backticks and ${}, e.g. *string to insert ${variable} into* ` s => ${s.nickname} Spice; ` is equivalent to ` s => s.nickname + " Spice" `
 * **filter** calls a true/false function on each item and creates a new array with only the items where the function returns true
 ` const mels = spices.filter(s => s.name.includes("Mel")); `
