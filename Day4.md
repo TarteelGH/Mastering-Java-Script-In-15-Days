@@ -17,6 +17,19 @@
 
 ### 1. Events & Handlers :
 
+#### Events & Handlers :
+* The web browser fires events when certain things happen on the page ,For example, when the user clicks somewhere on the page, a click event is fired .
+* We can detect events with JS using an event listenerThe **.addEventListener()* method lets us listen for events on a DOM element
+```
+document.addEventListener("click", () => {
+    console.log("clicked")
+});
+```
+* .addEventListener() takes 2 parameters:
+  - The name of the event to listen to (e.g. "click")
+  - A handler function that JS calls when that event is fired on this element
+
+
 ### 2. Conditionals :
 
 ### 3.  Map & Filter :
