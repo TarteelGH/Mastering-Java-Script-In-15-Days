@@ -259,14 +259,14 @@ if (forecast === "sunny") {
 ##### while loops:
 
 * let us run a chunk of code over & over if a (condition) is true
-```
+```javascript
 let fiveRandomNumbers = [];
 while (fiveRandomNumbers.length < 5) {
     fiveRandomNumbers.push(Math.random());
 }
 ```
 * Don't use while (true) unless you want to see your computer burn!
-```
+```javascript
 while (true) {
     console.log("I am wasting resources infinitely");
 }
@@ -274,7 +274,7 @@ while (true) {
 #### (A)synchronous code :
 
 * Usually, our JS code does things that are very quick
-```
+```javascript
 console.log("This will print in a New York minute");
 console.log("This will print one New York minute later");
 ```
@@ -282,7 +282,7 @@ console.log("This will print one New York minute later");
 * But when we need to do something that takes a long time we still want the web browser to keep working
 * JS can only do one task at a time ("single-threaded") JS says: I cannot text you with a drink in my hand, eh 😂
 * So when we give JS a task that takes a while, it doesn't stop and wait
-```
+```javascript
 console.log("This will print first"); // 1
 setTimeout(() => console.log("This will print third"), 1000); // 3
 console.log("This will print second"); // 2
@@ -297,7 +297,8 @@ The task runs some time later, "asynchronously"
 
 ## Examples 🔍
 
-``` // TODO 1: Declare & assign variables pointing to the corresponding element(s)
+```javascript
+ // TODO 1: Declare & assign variables pointing to the corresponding element(s)
     // statement should be the "statement" div
     const statement = document.getElementById("statement");
     // optionButtons should be all the elements within the "options" div
@@ -390,7 +391,7 @@ checkSign(10);
 
 **Solution**
 
-```
+```javascript
 ```
 
 3.[Use the map Method to Extract Data from an Array.](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-map-method-to-extract-data-from-an-array)
@@ -409,7 +410,7 @@ const ratings = watchList.map(item => ({
 
 **Solution**
 
-```
+```javascript
 ```
 
 # DONE 😇
