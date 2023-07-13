@@ -132,7 +132,8 @@ typeof null                    OutPut = Object
 1.[Compound Assignment With Augmented Multiplication](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication)
 
 ***Solution***
-```let a = 5;
+```javascript
+let a = 5;
 let b = 12;
 let c = 4.6;
 
@@ -146,7 +147,8 @@ c *= 10;
 
 ***Solution***
 
-```let myStr;
+```javascript
+let myStr;
 myStr = "This is the first sentence.";
 myStr += " This is the second sentence.";
 ```
@@ -155,7 +157,8 @@ myStr += " This is the second sentence.";
 
 ***Solution***
 
-```// Setup
+```javascript
+// Setup
 const lastName = "Lovelace";
 
 // Only change code below this line
