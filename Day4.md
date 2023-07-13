@@ -21,7 +21,7 @@
 
 * The web browser fires events when certain things happen on the page ,For example, when the user clicks somewhere on the page, a click event is fired .
 * We can detect events with JS using an event listenerThe **.addEventListener()* method lets us listen for events on a DOM element
-```
+```javascript
 document.addEventListener("click", () => {
     console.log("clicked")
 });
@@ -31,13 +31,13 @@ document.addEventListener("click", () => {
   - A handler function that JS calls when that event is fired on this element
 
 * JS passes an event object to the handler function with information about the event ,If we accept this as a parameter, we can use it to get details
-```
+```javascript
 document.addEventListener("click", (event) => {
     console.log(event);
 });
 ```
 * event.target is the element the event fired on (in this case, which element was clicked)
-```
+```javascript
 document.addEventListener("click", (event) => {
     console.log(event.target);
 });
@@ -51,7 +51,7 @@ document.addEventListener("click", (event) => {
 #### Loops :
 
 * Loops let us run the same chunk of code multiple times
-```
+```javascript
 for (let rep = 0; rep < 10; rep += 1) {
     console.log("now doing rep", rep);
 }
@@ -62,13 +62,13 @@ console.log("do you even lift bro");
   - declare & initialize a loop counter
   - give a condition for the loop to keep running
   - describe how to change (usually increment) the counter each time
-```
+```javascript
 for (let count = 0; count <= 100; count += 10) {
     console.log(count);
 }
 ```
 * for ... of loops let us more easily iterate over items in a collection
-```
+```javascript
 const numbers = [1,2,3];
 for (let i = 0; i < numbers.length; i++) {
     console.log(numbers[i]);
@@ -78,13 +78,13 @@ for (let n of numbers) {
 }
 ```
 * We can use for...of to iterate over characters in a string
-```
+```javascript
 for (let char of "ALOHA") {
     console.log(char);
 }
 ```
 or items in an array
-```
+```javascript
 for (let item of ["pop", 6, "squish"]) {
     console.log(typeof item);
 }
@@ -94,7 +94,7 @@ for (let item of ["pop", 6, "squish"]) {
 ### 2. Conditionals :
 
 * if statements let us execute code under a certain condition
-```
+```javascript
 const you = {wannaBeMyLover: true};
 if (you.wannaBeMyLover) {
     you.gottaGetWithMyFriends = true;
@@ -103,7 +103,7 @@ if (you.wannaBeMyLover) {
 > code in the if block only runs if the (condition) is true
 
 * we can use else to run other code if (condition) is false
-```
+```javascript
 if (you.reallyBugMe) {
     console.log("Goodbye");
 } else {
@@ -111,7 +111,7 @@ if (you.reallyBugMe) {
 }
 ```
 * We can chain else and if blocks to account for multiple conditions
-```
+```javascript
 function compare(x, y) {
     if (x > y) {
         console.log(x, "is greater than", y);
@@ -123,13 +123,13 @@ function compare(x, y) {
 }
 ```
 * The (condition) is usually an expression that evaluates to a boolean
-```
+```javascipt
 if (forecast === "rain") {
     console.log("bring an umbrella");
 }
 ```
 * If it's given some other value, JS will convert it to a boolean and decide based on its "truthiness"
-```
+```javascript
 if ("nonempty strings are truthy") {
     console.log("this line will run");
 }
@@ -376,7 +376,7 @@ The task runs some time later, "asynchronously"
 
 **Solution**
 
-```
+```javascript
 function checkSign(num) {
 
   return ( num > 0) ? "positive" : ( num < 0) ? "negative" : "zero" ;
@@ -393,11 +393,16 @@ checkSign(10);
 ```
 ```
 
-3.[Use the map Method to Extract Data from an Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-map-method-to-extract-data-from-an-array)
+3.[Use the map Method to Extract Data from an Array.](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-map-method-to-extract-data-from-an-array)
 
 **Solution**
 
-```
+```javascript
+
+const ratings = watchList.map(item => ({
+  title: item["Title"],
+  rating: item["imdbRating"]
+}));
 ```
 
 4.[Use the filter Method to Extract Data from an Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-filter-method-to-extract-data-from-an-array)
