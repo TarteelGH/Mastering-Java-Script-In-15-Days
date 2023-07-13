@@ -1,13 +1,12 @@
-#  Day4 (6/Jul/2023) 🚀
+#  Day6 (8/Jul/2023) 🚀
 
 ## Things to do ✔️
 
-1. Watch This Topics from -JavaScript: From First Steps to Professional- course :
+1. Watch This Topics from -JavaScript: The Hard Parts,v2- course :
 
- - Events & Handlers .
- - Conditionals .
- - Map & Filter .
- - Doggos Quiz Game .
+ - Introduction .
+ - JavaScript Principles .
+ - Functions & Callbacks .
 
 2. Summarize what i learned .   
 3. Solve some problems from FreeCodeCamp .
@@ -15,45 +14,37 @@
 
 ## Summary of topics 📝
 
-### 1. Events & Handlers :
+### 1. Introduction :
 
-### 2. Conditionals :
+### 2. JavaScript Principles :
 
-### 3.  Map & Filter :
-
-### 4. Doggos Quiz Game :
+### 3.  Functions & Callbacks :
 
 ## Examples 🔍
 
 ## Challenges 💪🏽
 
-1.[Use Multiple Conditional (Ternary) Operators](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-multiple-conditional-ternary-operators)
+1.[Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem](codecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-higher-order-functions-map-filter-or-reduce-to-solve-a-complex-problem)
 
 **Solution**
 
 ```
 ```
 
-2.[Golf Code](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/golf-code)
+2.[Apply Functional Programming to Convert Strings to URL Slugs]([https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/golf-code](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/apply-functional-programming-to-convert-strings-to-url-slugs))
 
 **Solution**
 
 ```
 ```
 
-3.[Use the map Method to Extract Data from an Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-map-method-to-extract-data-from-an-array)
+3.[Exercises for functions and callbacks]([https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-map-method-to-extract-data-from-an-array](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week2-day1-tasks/tasks.md))
 
 **Solution**
 
 ```
 ```
 
-4.[Use the filter Method to Extract Data from an Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-filter-method-to-extract-data-from-an-array)
-
-**Solution**
-
-```
-```
 
 # DONE 😇
 
