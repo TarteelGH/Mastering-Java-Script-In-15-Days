@@ -16,7 +16,7 @@
 ### 1. Quiz Project :
 
 #### So here i did some codes ralatd to the quiz of frontendMaster  :
-```
+```javascript
 
     // TODO 1: Declare & assign variables pointing to the corresponding element(s)
     // statement should be the "statement" div
@@ -108,7 +108,7 @@ function howAboutThis(1weirdVariable!) {
 * For multiple parameters, parentheses are required ` (firstName, lastName) => firstName + " " + lastName `
   
 #### Scope : 
-```
+```javascript
 function myTest() {
   const loc = "foo";
   console.log(loc);
@@ -120,7 +120,7 @@ The myTest() function call will display the string foo in the console. The conso
 ```
 
 
-```
+```javascript
 function declareBankruptcy() {
     let bankruptcy = true;
 }
@@ -129,7 +129,7 @@ console.log(bankruptcy); // ReferenceError 🚫
 ```
 * Scopes are nested within the program The widest scope is the **global** scope Each function gets its own new scope within the scope where it was declared.
 
-```
+```javascript
 let planet = "Jupiter";
 function scopeOut() {
     let planet = "Mars";
@@ -141,7 +141,7 @@ Outer planet: Jupiter
 ```
 * Within each scope, you can access variables declared in a wider scope (e.g. global scope) But not those declared in a narrower scope (e.g. function scope).
 
-```
+```javascript
 let globalVariable = "I live in global scope"; 
 function narrowerScope() {
     console.log(globalVariable);
@@ -153,7 +153,7 @@ console.log(localVariable); // I live in global scope , ReferenceError 🚫 .
 ```
 * Variables declared with let can be modified from within a narrower scope This can be useful, but also dangerous!
 
-```
+```javascript
 let feeling = "free";
 function trap() {
     feeling = "boxedIn";
@@ -171,7 +171,7 @@ console.log(feeling); /// undefined ,  boxedIn
 
 ***Solution***
 
-```
+```javascript
 function timesFive (num) {
   return num*5;
 }
@@ -183,7 +183,7 @@ const answer = timesFive(5);
 
 ***Solution***
 
-```
+```javascript
 // Declare the myGlobal variable below this line
 
 let myGlobal = 10;
@@ -212,7 +212,7 @@ function fun2() {
 
 ***Solution***
 
-```
+```javascript
 function myLocalScope() {
   // Only change code below this line
   let myVar;
@@ -229,7 +229,7 @@ console.log('outside myLocalScope', myVar);
 
 ***Solution***
 
-```
+```javascript
 // Setup
 const outerWear = "T-Shirt";
 
@@ -249,7 +249,7 @@ myOutfit();
 
 ***Solution***
 
-```
+```javascript
 function nextInLine(arr, item) {
   // Only change code below this line
   arr.push(item);//The push() method adds an item to the end of an array.
