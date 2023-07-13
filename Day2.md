@@ -46,7 +46,8 @@ let board = document.getElementById("board"); `
 
 We'll see more kinds of statements later in the course
 
-   ``` function add(x, y) {
+   ```javascript
+ function add(x, y) {
     return x + y;
    }
    let biggest;
@@ -87,11 +88,12 @@ We'll see more kinds of statements later in the course
   * **.push()** : The push() method adds the specified elements to the end of an array and returns the new length of the array. ` let  numbers1 = [1, 2, 3]; let result1 = numbers1.push(4); ` output : ` [1, 2, 3, 4] `
 
   > ***Do these do the same thing?***
-   ``` let abcArray = ["a", "b", "c"];
+   ```javascript
+    let abcArray = ["a", "b", "c"];
      abcArray[1] = "d";
      abcArray;
    ```
-   ```
+   ```javascript
      let abcString = "abc";
      abcString[1] = "d";
      abcString;
@@ -104,12 +106,12 @@ We'll see more kinds of statements later in the course
    * "Immutable" data always stays the same (e.g. strings & other primitives)
   
    > ***Do these do the same thing?***
-   ```
+   ```javascript
        let numbers1 = [1, 2, 3];
        let result1 = numbers1.push(4);
        numbers1;
    ```
-   ```
+   ```javascript
      let numbers2 = [1, 2, 3];
      let result2 = numbers2.concat([4]);
      numbers2;
@@ -120,7 +122,8 @@ We'll see more kinds of statements later in the course
    > Other actions do not mutate the original array, but instead create a new copy (e.g. oldArray.concat(otherArray)) .
 
      > ***What will Happen?***
-   ``` const operands = [4, 6];
+   ```javascript
+    const operands = [4, 6];
        const sum = operands[0] + operands[1];
        operands[0] = 5;
        operands = [23,442]; // TypeError: Assignment to constant variable.
@@ -137,7 +140,7 @@ We'll see more kinds of statements later in the course
 
 - #### Object :  The Object type represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor or the object initializer / literal syntax.
 
-```
+```javascript
 const js = {
     name: "JavaScript",
     abbreviation: "JS",
@@ -152,7 +155,7 @@ Objects collect multiple values together to describe more complex data Similar t
     * Getting property values : ` js.name `  ` js.isAwesome `
     * Using property values : ` js.name.startsWith("Java") `  ` let age = 2022 - js.birthYear; `
     * Setting property values :
-```
+```javascript
 const indecisive = {
     lunch: "sandwich"
 };
@@ -168,7 +171,7 @@ indecisive.snack = "chips";
 - #### methods :
 
     * Properties can point to functions too We call function-properties "methods" on objects
-```
+```javascript
 const dog = {
     name: "Ein",
     breed: "Corgi",
@@ -182,7 +185,7 @@ dog.speak();
 
     * this in a method lets us reference other properties on the object
     
-```
+```javascript
 anjana.speak = function () {
     console.log("Hi my name is", this.name);
 }
@@ -190,7 +193,7 @@ anjana.speak = function () {
 anjana.speak();
 ```
 - #### Nested objects :
-```
+```javascript
 const menu = {
     lunch: {
         appetizer: "salad",
@@ -206,7 +209,7 @@ const menu = {
 const tiramisu = menu.lunch.dessert;
 ```
 - #### Objects in Arrays & Objects :
-```
+```javascript
 const spices = [
     {name: "Emma", nickname: "Baby"},
     {name: "Geri", nickname: "Ginger"},
@@ -238,7 +241,7 @@ const spiceGirls = {
 ` const five = Math.abs(-5); `
   * strings?
 Strings are primitive values (not objects) but JS automatically wraps them in String objects and it,s imutable 
-```
+```javascript
 const hello = "hello";
 console.log(hello.length);
 const yello = hello.toUpperCase();
@@ -260,7 +263,7 @@ const yello = hello.toUpperCase();
 
 ***Solution***
 
-```
+```javascript
 // Setup
 const contacts = [
   {
@@ -312,7 +315,7 @@ lookUpProfile("Akira", "likes");
 
 ***Solution***
 
-```
+```javascript
 function forecast(arr) {
   // Only change code below this line
 let forecast = ['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms'] //The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified. 
@@ -328,7 +331,7 @@ console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']
 
 ***Solution***
 
-```
+```javascript
 function spreadOut() {
   let fragment = ['to', 'code'];
   let sentence = ['learning', ... fragment ,'is',  'fun']; // Change this line
