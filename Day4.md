@@ -123,7 +123,7 @@ function compare(x, y) {
 }
 ```
 * The (condition) is usually an expression that evaluates to a boolean
-```javascipt
+```javascript
 if (forecast === "rain") {
     console.log("bring an umbrella");
 }
