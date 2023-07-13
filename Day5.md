@@ -139,17 +139,107 @@ console.log(greeting);
 console.log(greeting.trim());
 // Expected output: "Hello world!";
 ```
- 
-
-
 
 ### 3. Async :
 
+#### async functions :
+
+* If we try to await something in a regular function...
+```javascript
+function fetchResponse(url) {
+    const response = await fetch(url);
+    return response;
+}
+```
+> JS doesn't allow it
+* We need to make it an async function
+```javascript
+async function fetchResponse(url) {
+    const response = await fetch(url);
+    return response;
+}
+```
+> This tells JS to expect to await async operations inside the function
+
+
 ### 4. Modules :
 
-### 5. Wrapping up :
+#### Modules :
 
-## Examples 🔍
+* Modules let us split big codebases across multiple files
+* Take a closer look at our script tag:
+```javascript
+<script type="module">
+    //...
+</script>
+```
+> JS modules work differently from JS scripts
+* One difference is that we can't use await outside of a function in a script
+```javascript
+<script>
+    await fetch("https://dog.ceo/api/breed/hound/list");
+</script>
+```
+* Module scope Another difference is that modules create their own scope
+
+#### import && export :
+* **export** lets us expose variables from our module's scope to the outside world
+```javascript
+// myModule.js
+const veryUsefulFunction = () => "I came from a module";
+export { veryUsefulFunction };
+```
+* import lets us use an exposed variable from another module
+```javascript
+// otherModule.js
+import { veryUsefulFunction } from './myModule.js'
+
+veryUsefulFunction();
+```
+#### Debugging :
+
+* console.log() (or .warn() or .error()) is one way to understand what's happening when your program runs
+```javascript
+function whyIsntThisWorking(input) {
+    console.log("Well at least we got this far");
+    console.log(input);
+    return thingThatDoesntWork(input);
+}
+```
+* You can also use the browser's debugger to pause JS and inspect what's happening
+```javascript
+function whyIsntThisWorking(input) {
+    debugger;
+    return thingThatDoesntWork(input);
+}
+```
+> The debugger statement creates a breakpoint where JS will pause and let you look around
+* Different browsers' debuggers work differently
+  - Firefox
+  - Chrome
+  - Safari
+
+ #### Error handling :
+
+ * Once we've discovered where in our program an error is likely, we can do something about it!
+ * Usually errors will cause JS to stop running our code
+```javascript
+thisThrowsAnError();
+console.log("I'll never get here");
+```
+> Sometimes that's appropriate and what we want JS to do
+* try lets us "watch out" for potential errors its friend catch lets us manage errors when they occur
+```javascript
+try {
+    thisMightThrowAnError();
+} catch (error) {
+    console.error("As if! Error:", error); 
+    console.log("Whatever, let's press on anyway");
+}
+console.log("still rollin' with the homies");
+```
+
+
 
 ## Challenges 💪🏽
 
