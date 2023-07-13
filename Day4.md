@@ -134,7 +134,7 @@ if ("nonempty strings are truthy") {
     console.log("this line will run");
 }
 ```
-```
+```javascript
 if (0) {
     console.log("zero is truthy");
 } else {
@@ -146,7 +146,7 @@ if (0) {
 #### Boolean (logical) operators :
 
 * Sometimes we care about the opposite of a value
-```
+```javascript
 let someoneIsAroundYou = false; 
 if (!someoneIsAroundYou) {
     console.log("baby I love you");
@@ -155,7 +155,7 @@ if (!someoneIsAroundYou) {
 > The ! operator negates a boolean (gives its opposite)
 
 * Sometimes we care about the truthiness of more than one value
-```
+```javascript
 if (you.happy && you.knowIt) {
     you.clapHands();
 }
@@ -187,11 +187,11 @@ if (you.happy && you.knowIt) {
 #### Conditional ternary operator :
 
 * JS also has a "shortcut" operator for writing quick conditionals it needs 3 values to work: ` condition ? valueIfTrue : valueIfFalse; `
-```
+```javascript
 let mood = forecast === "sunny" ? "happy" : "sad";
 ```
 is equivalent to
-```
+```javascript
 let mood;
 if (forecast === "sunny") {
     mood = "happy";
@@ -205,7 +205,7 @@ if (forecast === "sunny") {
 #### map & filter :
 * The map & filter methods also let us process all the items in an array .
 * **map** calls a function on each item in an array to create a new array
-```
+```javascript
     const spices = [
     {name: "Emma", nickname: "Baby"},
     {name: "Geri", nickname: "Ginger"},
@@ -225,17 +225,17 @@ const nicknames = spices.map(s => s.nickname + " Spice
 * Is another neat trick for iterating over arrays
 * It lets us take all the items in an array and spread 'em around
 * We can use it to put all the items from one array inside another array
-```
+```javascript
 const oldBurns = ["square", "wack"];
 const newBurns = ["basic", "dusty", "sus"];
 const burnBook = [...oldBurns, ...newBurns];
 ```
 equivalent to
-```
+```javascript
 const burnBook = oldBurns.concat(newBurns);
 ```
 * We can also use it to pass all the items from an array as arguments to a function or method
-```
+```javascript
 const skills = ["HTML", "CSS", "JS"];
 const newSkills = ["React", "TypeScript", "Node"]
 skills.push(...newSkills);
@@ -243,7 +243,7 @@ console.log(...skills);
 let mood = forecast === "sunny" ? "happy" : "sad";
 ```
 is equivalent to
-```
+```javascript
 let mood;
 if (forecast === "sunny") {
     mood = "happy";
