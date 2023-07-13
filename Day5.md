@@ -17,6 +17,47 @@
 
 ### 1. Data Fetching & Promises :
 
+#### Fetching data :
+
+* URLs point to resources on the web *https://images.dog.ceo/breeds/bluetick/n02088632_924.jpg*
+* APIs provide URLs that point at data we care about *https://dog.ceo/api/breed/hound/list*
+```javascript
+  {
+    "message": [
+      "afghan",
+      "basset",
+      "blood",
+      "english",
+      "ibizan",
+      "plott",
+      "walker"
+    ],
+    "status": "success"
+  }
+```
+* **fetch()** lets us use JS to load data from APIs ` fetch("https://dog.ceo/api/breed/hound/list") `
+
+#### Promises :
+
+* It takes time to fetch data from the network
+```javascript
+>> fetch("https://dog.ceo/api/breed/hound/list")
+Promise { <state>: "pending" }
+```
+> So JS writes us an "IOU" for the data value it doesn't have yet aka a Promise of a value
+
+* Promises can be in 3 possible states:
+
+- pending: still waiting for the value, hang tight
+- fulfilled (aka "resolved"): finally got the value, all done
+- rejected: sorry couldn't get the value, all done
+ It takes time for Promises to resolve, so they are "asynchronous"
+
+#### await :
+
+
+
+
 ### 2. Destructuring Data :
 
 ### 3. Async :
