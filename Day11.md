@@ -141,28 +141,100 @@ trend > 0;             //false
 Object.is(trend,-0);   //true
 Object.is(trend,0);    //false
 ```
+* **Math.sign() :** 
+The Math.sign() static method returns 1 or -1, indicating the sign of the number passed as argument. If the input is 0 or -0, it will be returned as-is.
+```javascript
+Math.sign(-3)   //-1
+Math.sign(3)    //1
+Math.sign(-0)   //-0
+Math.sign(0)    //0
 
+//"fix" Math.sign(..)
+function sign(v) {
+return v !== 0 ? Math.sign(v) : object.is(v,-0) ? -1 : 1;
+}
+```
+> 1/-♾ = -0 
+* **Fundamental Objects :** 
+aka: Built-In Objects
+aka: Native Functions
 
+```javascript
+var yesterday = new Date("March 6 , 2019");
+yesterday.toUTCString();
+// "Wed, 06 Mar 2019 06:00:00 GMT"
 
-
-
-
-
-
-
-
-
+```
 
 ## Examples 🔍
 
+> I wrote !! 
+
 ## Challenges 💪🏽
 
-1.[SECTION'S EXERCISES]([[codecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-higher-order-functions-map-filter-or-reduce-to-solve-a-complex-problem](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week2-day3-tasks/tasks.md)](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week3-day1-tasks/tasks.md)https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week3-day1-tasks/tasks.md)
+* [SECTION'S EXERCISES](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week3-day1-tasks/tasks.md)
 
-**Solution**
+1. Question 1:
+Write a function called convertStringToNumber that converts a string to a number using the unary plus operator.
+If the input is not a string, return an object of the input's value and type.
+```javascript
+function convertStringToNumber(input) {
+  if (typeof input !== 'string') {
+    return { value: input, type: typeof input };
+  }
 
+  const convertedNumber = +input;
+
+  if (Number.isNaN(convertedNumber)) {
+    return { value: input, type: 'NaN' };
+  }
+
+  return { value: convertedNumber, type: 'number' };
+}
+
+// is a string, it tries to convert it to a number using the unary plus operator (+). This operator converts a string to a numeric value.
+}
 ```
+2. Question 2:
+Write a function called checkNaN that takes a single argument and returns true if the argument is NaN and false otherwise.
+```javascript
+const checkNaN = (value) => {
+  return Number.isNaN(value); 
+} 
 ```
+3. Question 3:
+Write a function called isEmptyValue that checks if a given input is an empty value (undefined, null, or empty string).
+```javascript
+ function isEmptyValue(value) {
+  return value === undefined || value === null || value === '';
+}
+```
+4. Question 4:
+Write a function called compareObjects that takes 2 arguments of type "object" and compares them. If both arguments are equal, return true. If not, return false.
 
+If either argument is not of type "object", the function should return an array of the arguments.
+
+const compareObjects = (input1, input2) => {
+if ( typeof input1 === typeof input2 ) {
+if ( input1 === input2 ) {
+return true;
+    }
+  }
+}
+5. Question 5:
+Write a function called complexCoercion that takes a single argument and checks if its type is primitive, and if so returns a coerced value according to the rules below.
+
+coercion rules:
+
+if input is primive and:
+if input is a number, convert to string and then return a boolean.
+if input is a string, return a boolean.
+if input is null or undefined, return false.
+If input is not a primitive type, return the argument.
+```javascript
+const complexCoercion = (input) => {
+  //write your own code here
+}
+```
 
 # DONE 😇
