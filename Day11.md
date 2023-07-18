@@ -88,6 +88,7 @@ v = finction(){};
 typeof v = "function";
 v = [1,2,3];
 typeof v = "array";
+```
 
 * **undefined vs. undeclared :** 
 - udefined : there is definitely a variable , and at the moment it has no value.
@@ -109,6 +110,7 @@ isNaN(myAge); //false
 isNaN(myNextAge); //false
 isNaN("my age"); //true
 Number.isNaN("my age"); //false
+```
 * so NaN it is a number and it is the invalid nimber and it is for accur
 
 * **Negative Zero :**
@@ -127,7 +129,21 @@ console.log(Object.is(-0, 0));
 const obj = {};
 console.log(Object.is(obj, {}));
 // Expected output: false
+```javascript
+var trend = -0;
+trend === 0; //true
+
+trend.toStrinf();      // "0"
+trend === 0;           //true
+trend < 0;             //false
+trend > 0;             //false
+
+Object.is(trend,-0);   //true
+Object.is(trend,0);    //false
 ```
+
+
+
 
 
 
