@@ -15,7 +15,7 @@
 
 ### 1. Introduction :
 
-* firstly we talked abaut ++ :
+* **firstly we talked abaut ++** :
 ```javascript
 var x = 4 ;
 
@@ -26,8 +26,9 @@ x;    // 5
 x;    // 6
 ```
 
-* ( x++ , ++x =  // x = x+1 )
-* Course Overview
+> ( x++ , ++x =  // x = x+1 
+
+* **Course Overview :**
   - Types
     • Primitive Types
     • Abstract Operations
@@ -47,7 +48,7 @@ x;    // 6
 
 ### 2. Types :
 
-* Types :
+* **Types :** 
    • Primitive Types
    • Abstract Operations
    • Coercion
@@ -67,6 +68,72 @@ x;    // 6
 • array = obj
 > typeof return string " ... "
 > In JavaScript, variables don't have types, values do.
+```
+v = "1";
+typeof v; // "string"
+v = 2;
+typeof v; // "number"
+v = true;
+typeof v; // "boolean"
+v = {};
+typeof v; // "object"
+v = symbol();
+typeof v; // "symbol"
+var v;
+typeof v; // "undefined"
+v = 43n;
+typeof v; // "biglnt"
+typeog notexist ; // "undefined";
+v = finction(){};
+typeof v = "function";
+v = [1,2,3];
+typeof v = "array";
+
+* **undefined vs. undeclared :** 
+- udefined : there is definitely a variable , and at the moment it has no value.
+- undeclared : it is neveer been created in any scope that we have access to.
+> TDZ : the temoral dead zone .
+> block scope : don not get inialization they never initialy get set to undefined.
+
+* **NaN :**  the special what we call sentinal value that indicates an invalid number.
+* NaN: Invalid Number
+  - don't: undefined
+  - don't: null
+  - don't: false
+  - don't: -1
+  - don't: 0
+```javascript
+var myNextAge = Number("n/a"); //NaN
+myAge - "my age"; //NaN
+isNaN(myAge); //false
+isNaN(myNextAge); //false
+isNaN("my age"); //true
+Number.isNaN("my age"); //false
+* so NaN it is a number and it is the invalid nimber and it is for accur
+
+* **Negative Zero :**
+* it is the negative reppresentaton of zero
+* Object.is() : The Object.is() static method determines whether two values are the same value.
+```javascript
+console.log(Object.is('1', 1));
+// Expected output: false
+
+console.log(Object.is(NaN, NaN));
+// Expected output: true
+
+console.log(Object.is(-0, 0));
+// Expected output: false
+
+const obj = {};
+console.log(Object.is(obj, {}));
+// Expected output: false
+```
+
+
+
+
+
+
 
 
 
