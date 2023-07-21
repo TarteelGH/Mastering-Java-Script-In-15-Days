@@ -68,7 +68,7 @@ x;    // 6
 • array = obj
 > typeof return string " ... "
 > In JavaScript, variables don't have types, values do.
-```
+```javascript
 v = "1";
 typeof v; // "string"
 v = 2;
