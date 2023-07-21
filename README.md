@@ -1,13 +1,13 @@
-# Mastering-Java-Script-In-20-Days🔥
+# Mastering-Java-Script-In-15-Days🔥
 **Gaza Sky Geeks Learning Sprint - 20-Day Learning JavaScript Challenge.**
 
-Welcome to the 20-Day Learning JavaScript Challenge! 🚀
+Welcome to the 15-Day Learning JavaScript Challenge! 🚀
 
 In this challenge, I will enhance my JavaScript skills and knowledge,And I will follow a guiding plan in order to improve my javaScript skills and knowledge,  Each day, I will explore different aspects of JavaScript, building a solid foundation and gaining hands-on experience through practical exercises and projects.✨
 
 ## ⭐️Overview
 
-- Duration: 20 days.
+- Duration: 15 days.
 - Objective: Improve JavaScript proficiency through daily learning and practice.
 
 ## ⭐️Courses
@@ -40,6 +40,11 @@ In this challenge, I will enhance my JavaScript skills and knowledge,And I will 
  7. [Day7](https://github.com/TarteelGH/Mastering-Java-Script-In-20-Days/blob/main/Day7.md)
  8. [Day8](https://github.com/TarteelGH/Mastering-Java-Script-In-20-Days/blob/main/Day8.md)
  9. [Day9](https://github.com/TarteelGH/Mastering-Java-Script-In-20-Days/blob/main/Day9.md)
- 10. [Day10](https://github.com/TarteelGH/Mastering-Java-Script-In-20-Days/blob/main/Day10.md)
+10. [Day10](https://github.com/TarteelGH/Mastering-Java-Script-In-20-Days/blob/main/Day10.md)
+11. [Day11]
+12. [Day12]
+13. [Day13]
+14. [Day14]
+15. [Day15] 
 
 
