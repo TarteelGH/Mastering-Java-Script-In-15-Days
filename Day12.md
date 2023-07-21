@@ -5,7 +5,7 @@
 1. Watch This Topics from -JavaScript: - The Hard Parts,v2 - course :
 
  - Static Typing .
- - Types .
+ - Scope .
  
 2. Summarize what i learned .   
 3. Solve some problems from FreeCodeCamp .
