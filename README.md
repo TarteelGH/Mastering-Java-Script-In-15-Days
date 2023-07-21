@@ -44,7 +44,7 @@ In this challenge, I will enhance my JavaScript skills and knowledge,And I will 
 11. [Day11](https://github.com/TarteelGH/Mastering-Java-Script-In-15-Days/blob/main/Day11.md)
 12. [Day12](https://github.com/TarteelGH/Mastering-Java-Script-In-15-Days/blob/main/Day12.md)
 13. [Day13](https://github.com/TarteelGH/Mastering-Java-Script-In-15-Days/blob/main/Day13.md)
-14. [Day14]
+14. [Day14](https://github.com/TarteelGH/Mastering-Java-Script-In-15-Days/blob/main/Day14.md)
 15. [Day15] 
 
 
