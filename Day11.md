@@ -233,8 +233,21 @@ coercion rules:
 - if input is null or undefined, return false.
 - If input is not a primitive type, return the argument.
 ```javascript
+
 const complexCoercion = (input) => {
-  //write your own code here
+  function complexCoercion(input) {
+  const type = typeof input;
+
+  if (type === 'number') {
+    return Boolean(String(input));
+  } else if (type === 'string') {
+    return Boolean(input);
+  } else if (input === null || input === undefined) {
+    return false;
+  } else {
+    return input;
+  }
+}
 }
 ```
 
